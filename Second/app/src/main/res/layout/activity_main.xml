@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="125dp"-->
+<!--        android:text="Hello World"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias=""-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/textView"-->
+<!--        app:layout_constraintVertical_bias="0.01999998" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/purple_200"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Name : Faraz"-->
+<!--        android:textSize="30sp"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="262dp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/teal_200"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Name : Faraz"-->
+<!--        android:textSize="30sp"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="81dp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/purple_200"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Name : Faraz"-->
+<!--        android:textSize="30sp"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="121dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/teal_200"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Name : Faraz"-->
+<!--        android:textSize="30sp"-->
+<!--        tools:layout_editor_absoluteX="0dp"-->
+<!--        tools:layout_editor_absoluteY="161dp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginBottom="244dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/purple_200"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Name : Faraz"-->
+<!--        android:textSize="30sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textView2"-->
+<!--        tools:layout_editor_absoluteX="-16dp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:background="@color/teal_200"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Name : Faraz"-->
+<!--        android:textSize="30sp"-->
+<!--        tools:layout_editor_absoluteX="-16dp"-->
+<!--        tools:layout_editor_absoluteY="41dp" />-->
+
+
+    <!--    <ImageView-->
+<!--        android:src="@drawable/profile"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="200sp"-->
+<!--        android:adjustViewBounds="true"/>-->
+
+<!--    <ImageView-->
+<!--        android:src="@color/purple_200"-->
+<!--        android:layout_width="200sp"-->
+<!--        android:layout_height="200sp" />-->
+<!--    <ImageView-->
+<!--        android:src="@drawable/profile"-->
+<!--        android:layout_width="200sp"-->
+<!--        android:layout_height="200sp" />-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:text="Faraz Ali Ahmad"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:onClick="showToast"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="161dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
