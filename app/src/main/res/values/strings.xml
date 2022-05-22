@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Birthday Greeting App</string>
+    <string name="enter_name">Enter name</string>
+    <string name="create_birthday_card">Create birthday card</string>
+    <string name="your_name">Your name</string>
+    <string name="create_card">Create Card</string>
+    <string name="this_is_second_activity">This is second activity</string>
+</resources>
