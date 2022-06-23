@@ -4,9 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
 
+    <!--            Circular icon -> PROGRESS BAR  while loading image                  -->
+
+
+    <!--    Next Button  -->
 
 
     <ImageView
@@ -15,31 +20,30 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
 
+        android:background="@color/background"
         app:layout_constraintBottom_toTopOf="@id/share"
-        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
+
         app:layout_constraintLeft_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars"
-        android:background="@color/black"
-        />
-<!--            Circular icon -> PROGRESS BAR  while loading image                  -->
-
+        app:layout_constraintTop_toBottomOf="@+id/download_button"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         app:layout_constraintBottom_toBottomOf="@+id/memes_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/memes_image" />
+        app:layout_constraintStart_toStartOf="@+id/memes_image"
+        app:layout_constraintTop_toTopOf="@+id/memes_image"
+        />
 
-
-    <!--    Next Button  -->
+    <!--    Share Button -->
 
 
     <Button
@@ -47,46 +51,62 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
+
+        android:background="@color/purple_200"
+        android:onClick="nextmeme"
         android:padding="25dp"
         android:text="@string/next"
 
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-
-        android:onClick="nextmeme"
-        />
-
-    <!--    Share Button -->
+        app:layout_constraintStart_toEndOf="@+id/share" />
 
     <Button
         android:id="@+id/share"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
 
-        android:padding="25dp"
-        android:text="@string/share"
-        android:textAllCaps="false"
+        android:background="@color/button_color"
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent"
 
         android:onClick="sharememe"
-        />
+        android:padding="25dp"
+
+        android:text="@string/share"
 
 
-<!--    ***********   Verrtical Guidelines -> For seperating screen "I"  icon in design-->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/download_button"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp"
 
-        app:layout_constraintGuide_percent=".5"
-        />
+        android:background="@color/button_color"
+
+        android:onClick="download_meme"
+        android:text="@string/download"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--    ***********   Verrtical Guidelines -> For seperating screen "I"  icon in design-->
+<!--<androidx.constraintlayout.widget.Guideline-->
+<!--android:id="@+id/guideline2"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="vertical"-->
+<!--app:layout_constraintGuide_begin="20dp"-->
+
+<!--app:layout_constraintGuide_percent=".5"-->
+<!--    />-->
